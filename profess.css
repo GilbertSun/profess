@@ -17,8 +17,6 @@ body {
     width: 100%;
     height: 100%;
 
-    background: red;
-
     top: 0;
     left: 0;
 }
@@ -37,4 +35,24 @@ body {
 
     text-align: center;
     line-height: 100px;
+}
+
+.mask .row .cell {
+    background: #fff;
+}
+
+.mask .row .cell.hole {
+    background: transparent;
+}
+.mask {
+    transition: transform .5s ease;
+}
+.mask.step2 {
+    transform: rotateZ(90deg);
+}
+.mask.step3 {
+    transform: rotateZ(180deg);
+}
+.mask.step4 {
+    transform: rotateZ(270deg);
 }
